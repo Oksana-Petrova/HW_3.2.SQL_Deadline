@@ -58,6 +58,6 @@ public class LoginTest {
         open("http://localhost:9999");
         var loginPage = new LoginPage();
         var authInfo = DataHelper.generateUserWithValidLoginAndInvalidPassword();
-        loginPage.getErrorIfEnterInvalidPasswordThreeTimes();
+        loginPage.enterInvalidPasswordThreeTime(authInfo);
     }
 }
